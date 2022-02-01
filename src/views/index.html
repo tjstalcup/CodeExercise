@@ -16,13 +16,13 @@
     <h2>Exercise 1 - Testimonial Block</h2>
   </div>
 
-  <div>
-    <div>
-      <div>
-        <p>Gingerbread tart cupcake cake muffin cookie liquorice tiramisu. Toffee cupcake cake cake croissant icing carrot cake cookie. Dessert chocolate bar apple pie sesame snaps liquorice carrot cake cookie danish.</p>
-        <span>Indiana Jones, Archaeologist</span>
+  <div class="wrapper">
+    <div class="quote">
+      <div class="quote-block">
+        <p class="quote-block-text">Gingerbread tart cupcake cake muffin cookie liquorice tiramisu. Toffee cupcake cake cake croissant icing carrot cake cookie. Dessert chocolate bar apple pie sesame snaps liquorice carrot cake cookie danish.</p>
+        <span class="quote-block-author">Indiana Jones, Archaeologist</span>
       </div>
-      <a>Tell Me More</a>
+      <a class="quote-block-button">Tell Me More</a>
     </div>
   </div>
 
@@ -30,11 +30,31 @@
     <h2>Exercise 2 - Filterable Content</h2>
   </div>
 
-  <div>[Exercise 2 Here]</div>
+  <div id="app">
+    <nav class="filter-bar">
+      <div class="filter-bar-filters">
+        <button class="filter-bar-filters-filter" id="filter-genre">Genre </button>
+        <button class="filter-bar-filters-filter" id="filter-year">Year </button>
+        <ul class="filter-bar-filters-list" id="filter-genre-list"></ul>
+        <ul class="filter-bar-filters-list" id="filter-year-list"></ul>
+      </div>
+      <input type="text" class="filter-bar-search" id="filter-bar-search"/>
+    </nav>
+    <nav class="filter-bar-sub">
+      <div class="filter-bar-sub-row">
+        <input type="radio" name="media-filter" id="media-filter-movie" class="media-filter"/>
+        <label for="media-filter-movies" class="media-filter-label">Movies</label>
+        <input type="radio" name="media-filter" id="media-filter-book" class="media-filter"/>
+        <label for="media-filter-books" class="media-filter-label">Books</label>
+      </div>
+      <a href="#" class="filter-bar-sub-clear">Clear Filters</a>
+    </nav>
+    <div id="results" class="results"></div>
+  </div>
 
 </body>
 
 <footer>
-  <script src="../js/index.js"></script>
+  <script type="module" src="../js/index.js"></script>
 </footer>
 </html>

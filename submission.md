@@ -12,4 +12,5 @@ _your answer here_
 
 ## Is there anything else you'd like to let us know?
 
-_your answer here_
+- At first I was having issues with parcel until I switched my nvm to 14.16.1
+- Parcel was upset about the script tag missing `type="module"` attribute in views/index.html
