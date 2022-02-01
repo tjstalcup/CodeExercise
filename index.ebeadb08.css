@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+}
+
+.exercise-header {
+  padding: 1rem 0;
+  margin: 2rem 0;
+  text-align: center;
+  color: #fff;
+  background-color: #00a4bd;
+}
+
+/* Exercise 1 */
+
+.wrapper {
+  padding: 20px;
+  background-color: #f9f8f7;
+}
+
+.quote {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.quote-block {
+  border-left: 1px solid #ff6c02;
+  padding-left: 20px;
+  color: #333;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.quote-block:before {
+  background: #ff6c02;
+    border-radius: 50% 50% 50% 50%;
+    color: white;
+    content: "“";
+    font-family: 'icons';
+    font-size: 35px;
+    height: 25px;
+    left: -16px;
+    position: absolute;
+    text-align: center;
+    top: -7px;
+    width: 25px;
+    border: 3px solid #f9f8f7;
+}
+
+.quote-block:after {
+  background: #ff6c02;
+    border-radius: 50% 50% 50% 50%;
+    color: white;
+    content: "";
+    font-family: 'icons';
+    font-size: 35px;
+    height: 7px;
+    width: 7px;
+    left: -4px;
+    position: absolute;
+    text-align: center;
+    bottom: -7px;
+    
+}
+
+.quote-block-text {
+  position: relative;
+  top: -10px;
+  line-height: 24px;
+}
+
+.quote-block-author {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.quote-block-button {
+  background-color: #00a2e1;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 20px 30px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+@media screen and (min-width: 767px){
+  /* mobile first - here we will adjust anything that needs adjusting for browsers higher than 767 (tablets & desktop) */
+  .quote {
+    width: 50%;
+    flex-direction: row;
+  }
+  .quote-block {
+    margin-bottom: 0;
+  }
+  .quote-block-button {
+    width: 400px;
+  }
+}
+
+
+/* Exercise 2 */
+
+#app {
+  max-width: 1200px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+
+.filter-bar, .filter-bar-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.filter-bar-filters {
+  position: relative;
+}
+
+.filter-bar-filters-list {
+  display: none;
+}
+
+.filter-bar-filters-list.open {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding-left: 0;
+  min-width: 200px;
+  z-index: 1;
+}
+
+#filter-year-list {
+  left: 60px;
+}
+
+.filter-bars-filter-list-item {
+  text-transform: uppercase;
+  color: #666;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: 600;
+}
+.filter-bars-filter-list-item input {
+  margin-right: 10px;
+}
+
+.results {
+  border-top: 1px solid #ccc;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.results-item {
+  width: 30%;
+  margin: 0 1.5%;
+}
+
+.results-item-poster {
+  width: 100%;
+}
+/*# sourceMappingURL=index.ebeadb08.css.map */
